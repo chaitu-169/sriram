@@ -1,97 +1,76 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task5</title>
-</head>
-<body>
-    
-    <center>
-        <h1>Registration Form</h1>
+    <title>TASK-5</title>
     <style>
-        h1 {
-            color: blue;
+        .container {
+            margin-left: 20%;
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+        }
+        * {
+            background-color: #d9da3e;
+        }
+        a {
+            font-weight: 550;
+            font-size: 1.4em;
+            text-decoration: none;
+            background-color: white;
+        }
+        .item   {
+            width: 200px;
+            height: 40px;
+            background-color: white;
             text-align: center;
+            padding-top: 17px;
+        }
+        .balck-box {
+            width: 20px;
+            background-color: black;
+        }
+        .item-container:hover {
+            transform: scale(108%,108%);
+            transition: .5s;
+            
+        }
+        .item-container {
+            width: 220px;
+            display: grid;
+            grid-template-columns: 200px 20px;
+            transition: .5s;
+            margin-bottom: 5%;
+        }
+
+        .body {
+            width: 600px;
+            color: #90008c;
         }
     </style>
-        <table border="1" bordercolor="black" cellpadding="0" cellspacing="0">
-        <tr>
-           <td ><label for="First name" style="margin: 30px;" ><b>First Name</b></label></td>
-           <td><input type="text" size="70" ></td>
-        </tr>
-        <tr>
-            <td><label for="Last name" style="margin: 30px;" ><b>Last Name</b></label></td>
-            <td><input type="text" size="70" ></td>
-        </tr>
-        <tr>
-            <td><label for="Email" style="margin: 40px;" ><b>Email</b></label></td>
-            <td><input type="Email" size="70"id="email" name="email"></td>
-        </tr>
-        <tr>
-            <td><label for="password" style="margin: 30px;" ><b>Password</b></label></td>
-            <td><input type="password" size="70" ></td>
-        </tr>
-        <tr>
-            <td><label for="repassword" style="margin: 5px;" ><b>Re-enter Password </b></label></td>
-            <td><input type="password" size="70" ></td>
-        </tr>
-        <tr>
-            <th rowspan="2" ><label for="Gender" style="margin: 30px;" >Gender:</label></th>
-            <td><input type="radio" id="Male" name="Gender" value="Male">
-                <label for="Male">Male</label></td>
-        </tr>
-        <tr>
-            <td><input type="radio" id="FeMale" name="Gender" value="Female">
-                <label for="Female" >Female</label></td>
-        </tr>
-        <tr>
-            <th><label for="Age" style="margin: 0px;" >Age:</label></th>
-            <td><input type="text" id="integerInput" oninput="this.value = this.value.replace(/[^0-9]/g, '');" size="70"></td>
-        </tr>
-        <tr>
-            <th><label for="phone number" style="margin: 0px;">phone number:</label></th>
-            <td><input type="tel" size="70"></td>
-        </tr>
-        <tr>
-            <th><label for="Address" slot="90" style="margin: 0px;"  >Address</label></th>
-            <td><textarea id="Address" name="Address" rows="5" cols="65"></textarea></td>
-        </tr>
-        <tr>
-            <th><label for="State" style="margin: 30px;" >State</label></th>
-            <td><input type="text" size="70"id="State" name="State" ></td>
-        </tr>
-        <tr>
-            <th><label for="Country">Country</label></th>
-            <td><select name="Country">
-            <option value="choose your Country">choose your Country</option>
-            <option value="India">India</option>
-            <option value="other">Other</option>
-        </select></td>
-        </tr>
-        <tr>
-            <th>
-             <label for="Languages">Languages known</label></th>
-            <td>
-                <input type="checkbox" id="English" name="English" value="English">
-                <label for="English">English</label>
-                <input type="checkbox" id="Kannada" name="Kannada" value="Kannada">
-                <label for="Kannada">Kannada</label>
-                <input type="checkbox" id="Hindi" name="Hindi" value="Hindi">
-                <label for="Hindi">Hindi</label>
-                <input type="checkbox" id="Telugu" name="Telugu" value="Telugu">
-                <label for="Telugu">Telugu</label>
-            </td> 
-        </tr>
-        <tr>
-            <td colspan="2"><input type="checkbox"  required >
-            <label for="check" style="border: 70px;"  > Hereby I declare all the given details are true</label></td>
-        </tr>
-        <tr >
-            <td colspan="3" style="text-align: right">Log in to <a href="https://learn.codemithra.com/login/index.php"target="_blank">Ethnus</a> website</td>
-        </tr> 
-        </table>
-        <input type="submit"value="Register">
-    </center>
+</head>
+<body>
+    <div class="container">
+        <div class="nav" style="margin-top: 25%;">
+            <div class="item-container"><div class="item"><a href="">Home Page</a></div><div class="balck-box"></div></div>
+            <div class="item-container"><div class="item"><a href="">Musings</a></div><div class="balck-box"></div></div>
+            <div class="item-container"><div class="item"><a href="">My Town</a></div><div class="balck-box"></div></div>
+            <div class="item-container"><div class="item"><a href="">Links</a></div><div class="balck-box"></div></div>
+        </div>
+        <div class="body">
+            <p style="font-size: 4.1em; margin-top: 0%; font-weight: bolder;">My First Styled Page</p>
+            <p style="font-size: 1.5em;">Welcome to my styled page! <br><br>
+               It lacks images, but at least it has style. And it
+               has links, even if they don't go anywhere... <br><br>
+               There should be more here, but I don't know
+               what yet. <br> <hr>
+               <i style="font-size: 1.5em;">Made 03 September 2023 <br>
+                by myself.</i>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
